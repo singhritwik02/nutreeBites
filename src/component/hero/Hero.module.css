@@ -1,0 +1,116 @@
+.container{
+    display: flex;
+    /* padding-inline:10vw; */
+    padding-top:20vh;
+    position: relative;
+
+}
+
+.backgroundDiv{
+    width: 65vw;
+    height: 50vh;
+    background-color: white;
+    margin-left: auto;
+    border-radius: 20px;
+    border-top-left-radius: 30vw;
+    border-bottom-left-radius: 0;
+    padding-block:5vh;
+    padding-right:5vw;
+
+}
+.content{
+    position: absolute;
+    top:30vh;
+    /* left:10vw; */
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    width:45vw;
+    font-family: var(--secondary-font);
+    font-size:18px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:8vh;
+    animation: slide 2s ease-in  ;
+
+}
+
+@keyframes slide {
+    0%{
+        margin-left: -400px;
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        /* transform: translateX(0px); */
+        opacity: 1;
+    }
+}
+
+
+
+.company{
+    color:var(--main-color);
+    font-size: 20px;
+    
+
+}
+
+.img{
+    float:right;
+    height: 40vh;
+    width:40vh;
+    object-fit: cover;
+    border-radius: 25px;
+    animation: zoom 2s ease-in-out  ;
+}
+
+@keyframes zoom {
+    0%{
+        width:10px;
+        height: 10px;
+        margin-top: 25vh;
+        opacity: 0;
+    }
+    100%{
+        height: 40vh;
+        width:40vh;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:760px) {
+    .content{
+        width:50vw;
+        line-height:21px ;
+        font-size:16px ;
+
+    }
+}
+
+
+
+@media (max-width:430px) {
+    .container{
+        flex-direction: column-reverse;
+        align-items: center;
+    
+    }
+    .content{
+        position: relative;
+        top:0;
+        width: 70vw;
+        margin-top:30px;
+    }
+    .backgroundDiv{
+        margin-left: 0;
+    }
+}

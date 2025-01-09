@@ -1,0 +1,38 @@
+.btn{
+    width:22vw;
+    font-size:16px;
+    color:white;
+    background-color: var(--secondary-color);
+    padding-block:10px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--main-font);
+    
+}
+
+.btn2{
+    color:white;
+    width: 80px;
+    background-color: var(--main-color);
+    padding-block:5px;
+    padding-inline: 5px;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--main-font);
+}
+
+
+
+@media (max-width:760px) {
+    .btn{
+        width: 35vw;
+    }
+}
+
+
+@media (max-width:430px) {
+    .btn{
+        width: 80vw;
+    }
+}

@@ -1,0 +1,16 @@
+:root{
+  --bg-color:#FEEFE7;
+  --main-color:#D45631;
+  --secondary-color:#6EB84C;
+  --main-font:'Open Sans', sans-serif;
+  --secondary-font:'Nunito', sans-serif;
+
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+   
+}
