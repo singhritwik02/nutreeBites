@@ -8,7 +8,7 @@ import img1 from '../../assets/img1.jpg';
 function Product({name, src, price,description}) {
   return (
     <div className={styles.container}>
-        <img src={img1} className={styles.img}/>
+        <img src={img1} className={styles.img} alt='img'/>
         <div className={styles.details}>
           <h1 className={styles.name}>name :- {name}</h1>
           <h2 className={styles.price}>price :- {price}</h2>

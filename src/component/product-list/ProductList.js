@@ -7,7 +7,7 @@ function ProductList() {
   const [productList] =useState(productsList)
   console.log(productList)
   return (
-    <section className={styles.container}>
+    <section id='products' className={styles.container}>
         <h1 className={styles.sectionHeading}>Produtcts</h1>
         <div className={styles.products}>
         {productList.map((product)=><Product name={product.name} price={product.price} src={product.img}
