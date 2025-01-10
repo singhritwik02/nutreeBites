@@ -55,7 +55,7 @@
 
 @keyframes slide {
     0%{
-        transform: translatex(-100px);
+        transform: translatex(-10px);
         opacity: 0;
     
     }
@@ -72,7 +72,7 @@
 
 @keyframes slideHeading {
     0%{
-        transform: translateX(500px);
+        transform: translateY(15px);
         opacity: 0;
     }
     100%{
