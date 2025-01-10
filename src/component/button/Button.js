@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './Button.module.css'
 
-function Button({children , isCardBtn}) {
+function Button({children , isCardBtn,onClick}) {
   return (
-    <button className={` ${isCardBtn ?styles.btn2:styles.btn} `}>{children}</button>
+    <button type='button' onClick={onClick} className={` ${isCardBtn ?styles.btn2:styles.btn} `}>{children}</button>
   )
 }
 

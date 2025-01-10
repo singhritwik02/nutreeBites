@@ -6,6 +6,9 @@
   --secondary-font:'Nunito', sans-serif;
 
 }
+body{
+  background-color: #FEEFE7;
+}
 
 *{
    margin: 0;

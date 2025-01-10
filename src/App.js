@@ -1,17 +1,26 @@
+import { createContext,useState } from 'react';
+import {Routes,Route} from 'react-router-dom'
 import styles from './App.module.css';
-import Hero from './component/hero/Hero';
-import Caption from './component/middle-box/Caption';
 import Navbar from './component/navbar/Navbar';
-import ProductList from './component/product-list/ProductList';
+import WishList from './component/wishlist/WishList';
+import productsList from './data/product.json';
+import HomePage from './component/home-page/HomePage';
 
+export const CartContext = createContext()
 
 function App() {
+  const [productList] =useState(productsList)
+
   return (
     <div className={styles.app}>
-      <Navbar/>
-      <Hero/>
-      <Caption/>
-      <ProductList/>
+     <CartContext.Provider value={{productList}}>
+        
+        <Routes>
+          <Route index element={<HomePage/>}/>
+          <Route path="/wishlist" element={<WishList/>}></Route>
+          {/* <Route path="/cart" element={}/> */}
+      </Routes>
+     </CartContext.Provider>
     </div>
   );
 }
